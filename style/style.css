@@ -1,0 +1,49 @@
+.btn{
+    margin: 3px;
+}
+
+.blog-bar{
+    height: 45px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #afafaf;
+}
+
+.blog-btn{
+    background-color: #afafaf;
+    border-radius: 0px;
+}
+
+.blog-btn-sel{
+    background: #bcbcbc;
+    border-radius: 0px;
+}
+
+.nav-btn{
+    background-color: #bcbcbc;
+    border-radius: 0px;
+}
+
+.nav-btn-sel{
+    background: #c9c9c9;
+    border-radius: 0px;
+}
+
+.navigation-bar{
+    height: 45px;
+    width: 100%;
+    background-color: #bcbcbc;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.title{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    height: 100%;
+    width: 30%;
+    display: inline;
+    float: left;
+}
