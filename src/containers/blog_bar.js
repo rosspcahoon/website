@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 
 class BlogBar extends Component {
     classNameSelector(tab) {
-        if (tab.name == this.props.activeBlogTab) {
+        if (tab.name === this.props.activeBlogTab) {
             return "btn blog-btn-sel selected pull-xs-right";
         } else {
             return "btn blog-btn pull-xs-right";

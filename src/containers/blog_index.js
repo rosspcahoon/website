@@ -13,8 +13,11 @@ class BlogIndex extends Component {
     renderPosts(){
         return _.map(this.props.posts, post => {
             return (
-                <li className='list-group-item' key={post.id}>
-                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                <li className='list-group-item' key={post.published}>
+                    <Link to={`/blog/${post.id}`}>
+                        {post.title}
+                    </Link>
+                    <div>{post.published}</div>
                 </li>
             );
         });

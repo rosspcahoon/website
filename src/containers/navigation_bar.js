@@ -6,12 +6,11 @@ import { bindActionCreators } from 'redux';
 
 class NavigationBar extends Component {
     classNameSelector(tab) {
-        if (tab.name == this.props.activeTab) {
+        if (tab.name === this.props.activeTab) {
             return "btn nav-btn-sel pull-xs-right";
         } else {
             return "btn nav-btn pull-xs-right";
         }
-
     }
 
     renderButtons(){
@@ -30,7 +29,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <div className="navigation-bar">
-                    <div className="title pull-left">
+                    <div className=" title pull-left">
                         ROSS CAHOON
                     </div>
                     {this.renderButtons()}

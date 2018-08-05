@@ -5,7 +5,7 @@ export default function(state = 'About', action) {
     switch(action.type){
         case TAB_SELECTED:
             return action.payload;
+         default:
+            return state;
     }
-
-    return state
 }

@@ -10,6 +10,9 @@ export const DELETE_POST = 'delete_post';
 
 const ROOT_URL = 'http://reduxblog.herokuapp.com/api';
 const API_KEY = '?key=rpcwebsite';
+const G_ROOT_URL = 'https://www.googleapis.com/blogger/v3/blogs/';
+const G_API_KEY = '?key=AIzaSyCcB9dlS3iO7iPr_ABmR5Rhk4EePMEBbh4';
+const BLOG_ID = '8248864446473951450';
 
 export function selectTab(tab) {
     return {
@@ -26,7 +29,8 @@ export function selectBlogTab(tab) {
 }
 
 export function fetchPosts() {
-    const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
+//    const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
+    const request = axios.get(`${G_ROOT_URL}${BLOG_ID}/posts${G_API_KEY}`);
 
     return {
         type: FETCH_POSTS,
@@ -45,7 +49,8 @@ export function createPost(values, callback) {
 }
 
 export function fetchPost(id){
-    const request = axios.get(`${ROOT_URL}/posts/${id}${API_KEY}`);
+//    const request = axios.get(`${ROOT_URL}/posts/${id}${API_KEY}`);
+    const request = axios.get(`${G_ROOT_URL}${BLOG_ID}/posts/${id}${G_API_KEY}`);
 
     return {
         type: FETCH_POST,
@@ -54,7 +59,7 @@ export function fetchPost(id){
 }
 
 export function deletePost(id, callback){
-    const request = axios.delete(`${ROOT_URL}/posts/${id}${API_KEYS}`)
+    const request = axios.delete(`${ROOT_URL}/posts/${id}${API_KEY}`)
         .then(() => callback());
 
      return {

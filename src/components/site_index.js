@@ -16,7 +16,8 @@ export default class SiteIndex extends Component {
             </p>
          <h4 class="header"> Interests </h4>
             <p class="lead">
-            Hobbies include reading, climbing, computer science, technology, methodology, hiking and meditation.
+            Hobbies include reading, climbing, computer science, technology, methodology, hiking and meditation. I also
+            love music in general but especially hiphop.
             <br/>
             I enjoy reading and discussing a wide variety of topics that include but are not limited to:
                 <ul>
@@ -24,8 +25,6 @@ export default class SiteIndex extends Component {
                     <li>Psychology</li>
                     <li>Neuroscience</li>
                     <li>Philosophy</li>
-                    <li>Entheogens</li>
-                    <li>Consciousness</li>
                 </ul>
             </p>
           <h4 class="header"> Childhood and Education </h4>

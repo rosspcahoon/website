@@ -25,14 +25,10 @@ class BlogPostShow extends Component {
         }
         return (
             <div>
-                 <Link to="/blog/"> Back to Blog Browse </Link>
-                 <button
-                 className="btn btn-danger pull-xs-right"
-                 onClick={this.onDeleteClick.bind(this)}
-                 > Delete Post </button>
+                 <Link to="/blog/"> Browse other posts </Link>
                   <h3 className='header'> {post.title} </h3>
                   <h6> Categories: {post.categories}</h6>
-                  <p>{post.content}</p>
+                  <p><div dangerouslySetInnerHTML={{ __html: post.content }} /></p>
             </div>
         );
     }
