@@ -10,6 +10,42 @@ class BlogIndex extends Component {
         this.props.fetchPosts();
     }
 
+    getStringMonth(month) {
+        switch(month){
+        case "01":
+            return 'January';
+        case "02":
+            return 'February';
+        case "03":
+            return 'March';
+        case "04":
+            return 'April';
+        case "05":
+            return 'May';
+        case "06":
+            return 'June';
+        case "07":
+            return 'July';
+        case "08":
+            return 'August';
+        case "09":
+            return 'September';
+        case "10":
+            return 'October';
+        case "11":
+            return 'November';
+        case "12":
+            return 'December';
+        }
+    }
+
+    formatPostDate(date) {
+        var datetimeArray = date.split('T');
+        var dateArray = datetimeArray[0].split('-');
+
+        return this.getStringMonth(dateArray[1]) + " " + dateArray[2] + ", " + dateArray[0];
+    }
+
     renderPosts(){
         return _.map(this.props.posts, post => {
             return (
@@ -17,7 +53,7 @@ class BlogIndex extends Component {
                     <Link to={`/blog/${post.id}`}>
                         {post.title}
                     </Link>
-                    <div>{post.published}</div>
+                    <div className='small'>{this.formatPostDate(post.published)}</div>
                 </li>
             );
         });

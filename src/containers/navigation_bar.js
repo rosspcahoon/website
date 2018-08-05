@@ -18,6 +18,7 @@ class NavigationBar extends Component {
             return (
                     <Link
                         className = {this.classNameSelector(tab)}
+                        key = {tab.name}
                         onClick={() => this.props.selectTab(tab.name)}
                         to = {tab.url} >
                         {tab.name}

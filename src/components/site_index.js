@@ -4,9 +4,9 @@ export default class SiteIndex extends Component {
   render() {
     return (
       <div>
-        <h2 class="text-center header"> About Me < /h2>
-        <h4 class="header"> Professional </h4>
-            <p class="lead">
+        <h2 className="text-center header"> About Me < /h2>
+        <h4 className="header"> Professional </h4>
+            <p className="lead">
             I'm a computer engineer that currently works in as an RTL verification engineer for a Qualcomm. Since
             December 2013 I've worked on a DDR Memory Controller team writing testbenches for the backend and DDR
             interfaces. Features of the verification project that I have owned are DDR4 NVDIMM-P, write CRC, thermal throttling,
@@ -14,21 +14,21 @@ export default class SiteIndex extends Component {
             <a href="https://www.qualcomm.com/products/qualcomm-centriq-2400-processor"> Qualcomm Centriq 2400</a> which
             was the world's first 10nm server processor, released in November of 2017.
             </p>
-         <h4 class="header"> Interests </h4>
-            <p class="lead">
+         <h4 className="header"> Interests </h4>
+            <p className="lead">
             Hobbies include reading, climbing, computer science, technology, methodology, hiking and meditation. I also
             love music in general but especially hiphop.
             <br/>
             I enjoy reading and discussing a wide variety of topics that include but are not limited to:
-                <ul>
-                    <li>Mediation</li>
-                    <li>Psychology</li>
-                    <li>Neuroscience</li>
-                    <li>Philosophy</li>
-                </ul>
             </p>
-          <h4 class="header"> Childhood and Education </h4>
-            <p class="lead">
+             <ul>
+                 <li>Mediation</li>
+                 <li>Psychology</li>
+                 <li>Neuroscience</li>
+                 <li>Philosophy</li>
+             </ul>
+          <h4 className="header"> Childhood and Education </h4>
+            <p className="lead">
             I grew up in Eastern North Carolina in a town called Grantsboro with my mother, father, twin brother and younger
             brother. Never moving while growing up, I spent the first 18 years of my life in our home with about 14 acres
             of our own wooded property with hundreds of acres of neighoring farmland that my brothers and I would explore. Having
