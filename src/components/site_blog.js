@@ -10,7 +10,7 @@ export default class SiteBlog extends Component  {
     render() {
         return (
             <BrowserRouter>
-                <div>
+                <div className = 'in-set'>
                     <Switch>
                         <Route path="/blog/new" component={BlogNew} />
                         <Route path="/blog/:id" component={BlogPostShow} />

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class SiteIndex extends Component {
   render() {
     return (
-      <div>
+      <div className = "in-set">
         <h2 className="text-center header"> About Me < /h2>
         <h4 className="header"> Professional </h4>
             <p className="lead">

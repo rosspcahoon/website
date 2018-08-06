@@ -19,7 +19,7 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
         <BrowserRouter>
-            <div>
+            <div className = 'site-bg'>
                 <NavigationBar />
                 <Switch>
                     <Route path="/blog" component={SiteBlog} />

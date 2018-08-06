@@ -10,11 +10,10 @@ class BlogPostShow extends Component {
         this.props.fetchPost(id);
     }
 
-    onDeleteClick() {
-        const { id } = this.props.match.params;
-        this.props.deletePost(id, () => {
-            this.props.history.push('/blog/');
-        });
+    renderLabels(post){
+        return (
+            post.labels.join(', ')
+        );
     }
 
     render() {
@@ -25,10 +24,14 @@ class BlogPostShow extends Component {
         }
         return (
             <div>
-                 <Link to="/blog/"> Browse other posts </Link>
                   <h3 className='header'> {post.title} </h3>
-                  <h6> Categories: {post.categories}</h6>
-                  <p><div dangerouslySetInnerHTML={{ __html: post.content }} /></p>
+                 <Link className="link-back" to="/blog/"> Back to Posts </Link>
+                  <br></br>
+                  <h6> Labels: </h6>
+                  {this.renderLabels(post)}
+                  <br></br>
+                  <br></br>
+                  <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
         );
     }
