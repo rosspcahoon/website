@@ -24,11 +24,11 @@ class BlogPostShow extends Component {
         }
         return (
             <div>
-                  <h3 className='header'> {post.title} </h3>
-                 <Link className="link-back" to="/blog/"> Back to Posts </Link>
+                  <h3 className='header inline-display'> {post.title} </h3>
+                 <Link className="link-back inline-display" to="/blog/"> Back to Posts </Link>
                   <br></br>
-                  <h6> Labels: </h6>
-                  {this.renderLabels(post)}
+                  <small> Labels: {this.renderLabels(post)} </small>
+
                   <br></br>
                   <br></br>
                   <div dangerouslySetInnerHTML={{ __html: post.content }} />

@@ -9,8 +9,13 @@
     padding-left: 10px;
 }
 
+.inline-display{
+    display: inline;
+}
+
 .link-back{
     float: right;
+    display: inline;
 }
 
 .btn{
