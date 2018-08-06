@@ -41,4 +41,4 @@ function mapStateToProps({ posts }, ownProps){
     return { post: posts[ownProps.match.params.id] };
 }
 
-export default connect(mapStateToProps, { fetchPost, deletePost })(BlogPostShow);
+export default connect(mapStateToProps, { fetchPost })(BlogPostShow);
