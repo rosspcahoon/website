@@ -31,7 +31,7 @@ class BlogPostShow extends Component {
 
                   <br></br>
                   <br></br>
-                  <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <div className='blog-text' dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
         );
     }

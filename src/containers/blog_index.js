@@ -63,6 +63,11 @@ class BlogIndex extends Component {
   render() {
     return (
       <div>
+        <h2 className="text-center header"> Blog < /h2>
+        <p className='text-center'>
+            This page is a portal for displaying blog posts made to on Blogger. This was an exercise in connecting
+            to a third party API.
+        </p>
         <h3 className='header'> Posts </h3>
         <ul className='list-group'>
             {this.renderPosts()}

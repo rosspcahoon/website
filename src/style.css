@@ -1,3 +1,7 @@
+.blog-text {
+    overflow-wrap: break-word;
+}
+
 .site-bg{
     background-color: #f7f7f7;
     height: 100%;
