@@ -11,8 +11,8 @@ export default class SiteBlog extends Component  {
             <BrowserRouter>
                 <div className = 'in-set'>
                     <Switch>
-                        <Route path="/blog/:id" component={BlogPostShow} />
-                        <Route path="/blog" component={BlogIndex} />
+                        <Route path='/blog/:id' component={BlogPostShow} />
+                        <Route path='/blog' component={BlogIndex} />
                     </Switch>
                 </div>
             </BrowserRouter>

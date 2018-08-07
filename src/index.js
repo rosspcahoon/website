@@ -22,9 +22,9 @@ ReactDOM.render(
             <div className = 'site-bg'>
                 <NavigationBar />
                 <Switch>
-                    <Route path="/blog" component={SiteBlog} />
-                    <Route path="/contact" component={SiteContact} />
-                    <Route path="/" component={SiteIndex} />
+                    <Route path='/blog' component={SiteBlog} />
+                    <Route path='/contact' component={SiteContact} />
+                    <Route path='/' component={SiteIndex} />
                 </Switch>
             </div>
         </BrowserRouter>

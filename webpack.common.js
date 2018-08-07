@@ -9,8 +9,8 @@ module.exports = {
     plugins: [
         new CleanWebPackPlugin(['dist/*']),
         new HtmlWebpackPlugin({
-            template: "./public/index.html",
-            filename: "./index.html",
+            template: './public/index.html',
+            filename: './index.html',
             title: 'Production'
         })
     ],
@@ -24,14 +24,14 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             use: {
-              loader: "babel-loader"
+              loader: 'babel-loader'
             }
           },
           {
             test: /\.html$/,
             use: [
               {
-                loader: "html-loader"
+                loader: 'html-loader'
               }
             ]
           },

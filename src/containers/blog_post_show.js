@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchPost, deletePost } from '../actions';
+import { fetchPost, selectTab } from '../actions';
 import { Link } from 'react-router-dom';
 
 class BlogPostShow extends Component {
 
     componentDidMount() {
         const { id } = this.props.match.params;
+        this.props.selectTab('Blog');
         this.props.fetchPost(id);
     }
 
@@ -25,7 +26,7 @@ class BlogPostShow extends Component {
         return (
             <div>
                   <h3 className='header inline-display'> {post.title} </h3>
-                 <Link className="link-back inline-display" to="/blog/"> Back to Posts </Link>
+                 <Link className='link-back inline-display' to='/blog/'> Back to Posts </Link>
                   <br></br>
                   <small> Labels: {this.renderLabels(post)} </small>
 
@@ -41,4 +42,4 @@ function mapStateToProps({ posts }, ownProps){
     return { post: posts[ownProps.match.params.id] };
 }
 
-export default connect(mapStateToProps, { fetchPost })(BlogPostShow);
+export default connect(mapStateToProps, { fetchPost, selectTab })(BlogPostShow);
